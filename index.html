@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 3 part 1</title>
+</head>
+<body>
+
+    <div class="body">
+        <h1 id="nome">Meu nome é Jão</h1>
+    
+
+
+
+        <script>
+            alert("Alerta");
+            console.log("Outro ALERTA")
+
+            document.getElementById("nome").innerHTML ="Meu nome não é Jão";
+        </script>
+
+        <h1 id="texto">Texto Original</h1>
+        <button id="btn" onclick="document.getElementById('texto').innerText='Texto Modificado'">Alterar Texto</button>
+
+        <button id="btn" onclick="document.getElementById('texto').innerText='Texto Original'">Alterar para Original</button>
+
+        <br>
+
+        <label for="">Idade:</label>
+        <input class="border" type="text" id="idade">
+        <button id="btn" onclick="exibirResultado()">Verificar Idade</button>
+        <h3 class="border" id="resultado"></h3>
+
+        <script src="script.js"></script>
+    
+    </div>
+</body>
+</html>
